@@ -1,0 +1,23 @@
+{
+  "name": "example-api-testing-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "json-server db.json",
+    "test": "playwright test",
+    "start-tests": "start-server-and-test start-server http://localhost:3000 test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "playwright": "^1.49.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.9.3",
+    "start-server-and-test": "^2.0.8"
+  }
+}
